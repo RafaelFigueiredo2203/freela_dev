@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react"
+import { Instagram, Linkedin, Mail, Phone } from "lucide-react"
 import Link from "next/link"
 
 export default function Footer() {
@@ -62,13 +62,11 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-semibold mb-4 text-white">Redes Sociais</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-teal-400 transition-colors duration-300" aria-label="Instagram">
+              <a href="https://www.instagram.com/rafa_figueiredo2/" target="_blank" className="hover:text-teal-400 transition-colors duration-300" aria-label="Instagram">
                 <Instagram className="h-6 w-6" />
               </a>
-              <a href="#" className="hover:text-teal-400 transition-colors duration-300" aria-label="Facebook">
-                <Facebook className="h-6 w-6" />
-              </a>
-              <a href="#" className="hover:text-teal-400 transition-colors duration-300" aria-label="LinkedIn">
+              
+              <a href="https://www.linkedin.com/in/rafael-figueiredo-1197811a1/" target="_blank" className="hover:text-teal-400 transition-colors duration-300" aria-label="LinkedIn">
                 <Linkedin className="h-6 w-6" />
               </a>
             </div>
@@ -76,7 +74,9 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-gray-800 text-center">
-          <p>&copy; {currentYear} Rafael Figueiredo. Todos os direitos reservados.</p>
+          <p>&copy; {currentYear} {''}
+             <a className="hover:text-teal-400 transition-colors duration-300" target="_blank" href="https://github.com/RafaelFigueiredo2203">Rafael Figueiredo</a>. 
+             Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>
